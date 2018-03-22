@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	attribute selectors</title>
+	<style type="text/css">
+		/*[title]{
+			color: blue;
+		}*/
+		/*[title=kuazhu]{
+				color: skyblue;
+		}*/
+		/*[title='kuazhu']{
+				color: skyblue;
+		}*/
+		/*[title~="kuazhu"]
+		{
+			color: skyblue;
+		}*/
+		[title^="kuazhu"]{
+			color: skyblue;
+		}
+		/*[title*="kuazhu"]{
+			color: skyblue;
+		}*/
+		/*[title$="kuazhu"]{
+			color: skyblue;
+		}*/
+		/*[title|="kuazhu"]{
+			color: skyblue;
+		}*/
+	</style>
+</head>
+<body>
+	<a href="#" title="kuazhu">q1</a>
+	<a href="#" title="kuazhu.com">q2</a>
+	<a href="#" title="kuazhu com">q3</a>
+	<a href="#" title="kuazhu-com">q4</a>
+	<a href="#" title="www.kuazhu">q5</a>
+	<a href="#" title="www.kuazhu.com">q6</a>
+</body>
+</html>
