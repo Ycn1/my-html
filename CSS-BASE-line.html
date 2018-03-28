@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		p{
+			/*height: 50px;
+			background-color: white;*/
+			border:1px solid yellow;
+			margin-bottom: 10px;
+		}
+		.box{
+			background: grey;
+			padding-left: 10px;
+
+			}
+		
+		.dot{
+			display: inline-block;
+			height: 5px;
+			width: 5px;
+			background:red;
+		}
+		p:nth-child(2) .dot{
+			vertical-align:top;
+		}
+		p:nth-child(3).dot{
+			vertical-align:middle;
+		}
+		p:nth-child(4) .dot{
+			vertical-align:bottom;
+		}
+		p:nth-child(5) .dot{
+			vertical-align:text-bottom;
+		}
+
+	</style>
+</head>
+<body>
+	<p><span class="box"><span class="dot"></span>我是文字默认</span></p>
+	<p><span class="box"><span class="dot"></span>我是文字top</span></p>
+	<p><span class="box"><span class="dot"></span>我是文字middle</span></p>
+	<p><span class="box"><span class="dot"></span>我是文字bottom</span></p>
+	<p><span class="box"><span class="dot"></span>我是文字text-bottom</span></p>
+</body>
+</html>
