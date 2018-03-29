@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>absolute</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			height: 100px;
+			width: 100px;
+		}
+		.box1{
+			background: pink;
+		}
+		.box2{
+			background: purple;
+			position: absolute;
+			top:0px;
+			right: 0px;
+		}
+		.box3{
+			background: skyblue;
+		}
+		span{
+			height: 100px;
+			width: 100px;
+			background: yellow;
+			position: absolute;
+		}
+
+		.father{
+			height: 300px;
+			width: 300px;
+			background: pink;
+			/*overflow: hidden;*/
+			/*position: relative;*/
+			margin:0px auto;
+
+		}
+		/*.son{
+			width: 100px;
+			height: 100px;
+			background: blue;
+			position:absolute;
+			left: 50%;
+			margin-left: -50px;
+		}*/
+		.son{
+			width: 100px;
+			height: 100px;
+			background: blue;
+			position:fixed;
+			top: 100px;
+			left: 50px;
+		}
+		p{
+			height: 2000px;
+			width: 2000px;
+			background: gold;
+		}
+		.sz{
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: absolute;
+			bottom: 0px;
+		}
+		.f1{
+			height: 400px;
+			width: 400px;
+			background: pink;
+			position: relative;
+			z-index: 2；
+
+		}
+		.f11{
+			height: 200px;
+			width: 200px;
+			background: purple;
+			position: absolute;
+			left: 20px;
+			top:20px;
+			z-index: 3px;
+		}
+		.s1{
+			height: 100px;
+			width: 100px;
+			background: blue;
+			position: absolute;
+			top: 400px;
+			left: 400px;
+			z-index: 1;
+		}
+		.f2{
+			height: 400px;
+			width: 400px;
+			background: grey;
+			position: relative;
+			z-index: 3;
+
+		}
+		.f22{
+			height: 200px;
+			width: 200px;
+			background: tomato;
+			position: absolute;
+			left: 20px;
+			top:20px;
+			z-index: 2;
+		}
+		.s2{
+			height: 100px;
+			width: 100px;
+			background: skyblue;
+			position: absolute;
+			top: 20px;
+			left: 390px;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<span>我是span</span> -->
+	<!-- 绝对定位的元素会脱离标准流。对于行内元素来讲，脱离标准流之后，就不在区分块状元素与行内元素，就可以设置高度和宽度，以span为例。 -->
+	<!-- <div class="father">
+		<div class="son">
+			<div class="sz"></div>
+		</div>
+	</div>
+	<p></p> -->
+	<div class="f1">
+		<div class="f11">
+			<div class="s1"></div>
+		</div>
+	</div>
+	<div class="f2">
+		<div class="f22">
+			<div class="s2"></div>
+		</div>
+	</div>
+
+</body>
+</html>
