@@ -4,121 +4,215 @@
 	<meta charset="UTF-8">
 	<title>qq-mail</title>
 	<style type="text/css">
-		.bj{
-			height: 700px;
-			width: 1100px;
-			background-image: url(image/bj1.jpg);
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			height: 62px;
+			background:#eff4fa;
+		}
+		 .center{
+			height: 62px;
+			width: 70%;
+			margin:0px auto;
+		}
+		section{
+			height: 600px;
+			width: 70%;
+			margin:0px auto;
+		}
+		 header .logo{
+			background-image: url(image/QQ邮箱.PNG);
 			background-repeat: no-repeat;
-			border: 0px;
-			margin:0px auto;
-			
-		}
-		.ym{
-			height: 250px;
+			height: 62px;
 			width: 250px;
+			line-height: 62px;
+			float: left;
+		}
+		header nav{
 			float: right;
-			border: 1px solid black;
-			margin-top: 200px;
-			margin-left: 100px;
 		}
-		.d{
-			height: 40px;
-			width: 250px;
-			display: inline-block;
-			margin-bottom: 10px;
+		header nav li{
+			float: right;
+			list-style-type:none;
+			line-height: 62px;
 		}
-		p{
-			display: inline-block;
-			padding-left: 20px;
-
+		 a{
+			text-decoration: none;
+			font-size: 14px;
+			color: #369;
 		}
-		.un{
-			width: 200px;
-			height: 30px;
-			border: 0px;
-			margin-bottom: 20px;
-			margin-left: 20px;
-			font-size: 5px;
+		a:hover{
+			text-decoration: underline;
 		}
-		.pw{
-			width: 200px;
-			height: 30px;
-			border: 0px;
-			margin-bottom: 20px;
-			margin-left: 20px;
+		section .boxleft{
+			height: 600px;
+			width: 50%;
+			background-image: url(image/QQ邮箱中间图片.PNG);
+			background-repeat: no-repeat;
+			float: left;
+			background-position: 100px;
+			box-sizing: border-box;
 		}
-		.dl{
+		section .boxright{
 			width: 300px;
-			height: 40px;
-			border: 0px;
-			margin-bottom: 10px;
-			display: block;
-			margin-left: 25px;
+			height: 500PX;
+			float: right;
+			box-sizing: border-box;
 
 		}
-		.xz{
-			width: 250px;
-			height: 40px;border: 0px;
+		section .boxright .form{
+			height: 400px;
+			width: 300px;
+			margin-top: 100px;
+			border-radius: 6px;
+			border: 1px solid #ccf;
 		}
-		.nav{
+		section .hd{
+			width: 300px;
 			height: 50px;
-			width: 1100px;
-			margin:0px auto;
-			background: rgb(239 244 250);
+			background:#eff4fa; 
+			line-height: 50px;
+			padding: 0px 40px;
+			box-sizing: border-box;
+			border-bottom: 1px solid #ccf;
 		}
-		.nav1{
-			height: 30px;
-			width: 50px;
+		section .hd a{
+			font-size: 20px;
+			color: #aaa;
+		}
+		section .hd a:first-child{
+			float: left;
+		}
+		section .hd a:last-child{
 			float: right;
-			font-size: 8px;
-			display:block;
+		}
+		section .hd a:hover{
+			color: black;
+		}
+		section .bd{
+			height: 300px;
+			width: 300px;
+			padding-top: 40px;
+			padding-left: 20px;
+			box-sizing: border-box;
+		}
+		section .bd .inputer{
+			margin-top: 10px;
+			width: 250px;
+			height:40px;
+			border: 1px solid #ccf;
+			border-radius: 4px;
+
+		}
+		section .bd .inputer input{
+			border: 0px;
+			height: 100%;
+			width: 99%;
+			outline: none;
+			padding: 10px 20px 10px 30px;
+			box-sizing: border-box;
+			font-size: 14px;
+			color: #ccc;
+		}
+		section .bd .xz{
 			margin-top: 30px;
 		}
-		.img1{
+		section .bd .xz input{
+			height: 16px;
+			width: 16px;
+			vertical-align: top;
+			margin-top: 6px;
+		}
+		label{
+			font-size: 12px;
+		}
+		section .bd .su input{
+			height: 40px;
+			width: 250px;
+			background: #69c;
+			color: white;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		section .fd{
 			height: 50px;
-			width: 300px;
-
+			line-height: 50px;
+			float: right;
+			padding-right: 5px;
+			box-sizing: border-box;		}
+		section .fd a{
+			font-size: 12px;
 		}
-		.sb1{
+		footer{
+			height: 40px;
+			width: 100%;
 			text-align: center;
-			width: 200px;
-			height: 30px;
-			background: rgb(126 206 244);
+			line-height: 40px;
+			background: #eff4fa;
+			border-top: 1px solid  #eff4fa;
+			color: #ccc;
 		}
-
 		
 	</style>
 </head>
 <body>
-		<div class="nav">
-					<img src="image/QQ邮箱.PNG" class="img1">
-					<span class="nav1">企业邮箱</span>
-					<span class="nav1">手机版</span>
-					<span class="nav1">English</span>
-					<span class="nav1">基本版</span>
-					
+	<header>
+		<div class="center">
+			<h1 class="logo"></h1>
+			<nav>
+				<ul>
+					<li> <a href="#">企业邮箱</a></li>
+					<li><a href="#">手机版&nbsp;|&nbsp;</a></li>
+					<li><a href="#">English&nbsp;|&nbsp;</a></li>
+					<li><a href="#">基本版&nbsp;|&nbsp;</a></li>
+				</ul>
+			</nav>
 		</div>
-		<div class="bj">
+	
+	</header>
+	<section>
+		<div class="boxleft">
 			
-			<div class="ym">
-				
-				<div class="d">
-					<p>快速登录</p>
-					<p>账号密码登录</p>
+		</div>
+		<div class="boxright">
+			<div class="form">
+				<div class="hd">
+					<a href="#">快速登录</a>
+					<a href="#">账号密码登录</a>
 				</div>
-				<div class="un">
-					<input type="text" name="username" value="支持QQ号/邮箱号/手机号登录" >
+				<div class="bd">
+					<div class="inputer">
+						<input type="text" name="un" placeholder="支持手机号/邮箱号/QQ号">
+					</div>
+					<div class="inputer">
+						<input type="text" name="pwd" placeholder="QQ密码">
+					</div>
+					<div class="xz">
+						<input type="checkbox" id="checkbox1"><label for="checkbox1">下次自动登录</label>
+					</div>
+					<div class="su">
+						<input type="submit" name="queren" value="登&nbsp;陆">
+					</div>
 				</div>
-				<div class="pw">
-					<input type="password" name="pwd" value="QQ密码">
+				<div class="fd">
+					<a href="#">忘了密码？&nbsp;|&nbsp;</a>
+					<a href="#">注册新账号？&nbsp;|&nbsp;</a>
+					<a href="#">意见反馈</a>
 				</div>
-				<div class="xz">
-					<input type="checkbox">是否记住此密码
-				</div>
-				<div class="dl">
-					<input type="button" value="确认登录" align="right" class="sb1">
 				</div>
 			</div>
 		</div>
+	</section>
+	<footer>
+			<a href="#">关于腾讯&nbsp;|&nbsp;</a>
+			<a href="#">服务条款&nbsp;|&nbsp;</a>
+			<a href="#">客服中心&nbsp;|&nbsp;</a>
+			<a href="#">联系我们&nbsp;|&nbsp;</a>
+			<a href="#">帮助中心&nbsp;|&nbsp;</a>
+			@1998&nbsp;-&nbsp;2018&nbsp;Tencent&nbsp;Inc.&nbsp;All &nbsp;Rights&nbsp;Reserved.
+	</footer>
+	
 </body>
 </html>
