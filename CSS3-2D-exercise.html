@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2D-exercise	</title>
+	<style type="text/css">
+		div{
+			height: 200px;
+			width: 200px;
+			border: 1px solid black;
+			margin:0 auto;
+			perspective: 500px;
+		}
+		div img{
+			height: 200px;
+			transform-origin: center bottom;
+			transition-duration: 1s;
+		}
+		div img:hover{
+			transform: rotateX(75deg);
+		}
+		 ul{
+				height: 300px;
+				border: 1px solid black;
+				margin:100px;
+				background: skyblue;
+				padding-left: 280px;
+				box-sizing: border-box;
+
+		}
+		li{
+			list-style: none;
+			width: 150px;
+			height: 200px;
+			transform-origin: center center;
+			display: inline-block;
+			margin-left: 20px;
+			margin-top: 50px;
+			border: 1px solid white;
+			box-shadow: 0 0 20px;
+			transition: all 1s;
+			position: relative;
+			opacity: 0.5;
+
+		}
+		ul li:nth-child(1){
+			transform: rotateZ(20deg);
+		}
+		ul li:nth-child(2){
+			transform: rotateZ(60deg);
+		}
+		ul li:nth-child(3){
+			transform: rotateZ(30deg);
+		}
+		ul li:nth-child(4){
+			transform: rotateZ(60deg);
+		}
+		ul li img{
+			height: 200px;
+			width: 150px;
+				border-radius: 10px;
+		}
+		ul li:hover{
+			transform: rotateZ(0deg);
+			transform: scale(1.2);
+			z-index: 1;
+			opacity: 1;
+		}
+		
+	
+	</style>
+</head>
+<body>
+	<div>
+		<img src="image/5.jpg" alt="">
+	</div>
+	<ul>
+		<li><img src="image/5.jpg" alt=""></li>
+		<li><img src="image/bj1.jpg" alt=""></li>
+		<li><img src="image/5.jpg" alt=""></li>
+		<li><img src="image/bj1.jpg" alt=""></li>
+	</ul>
+	
+</body>
+</html>
