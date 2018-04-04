@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cuboid</title>
+	<style type="text/css">
+		 *{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			perspective: 500px;
+		}
+		ul{
+			height: 200px;
+			width: 500px;
+			margin:50px auto;
+			border: 1px solid black;
+			transform-style: preserve-3d;
+			position: relative;
+			transform:rotateX(0deg) rotateY(45deg);
+			animation:sport 5s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes sport{
+			from{
+				transform:rotateX(0deg)
+			}
+			to{
+				transform:rotateX(360deg)
+			}
+
+		}
+		 ul li{
+		 	list-style: none;
+			height: 200px;
+			width: 500px;
+			text-align: center;
+			line-height: 200px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		ul li:nth-child(1){
+			background: red;
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		ul li:nth-child(2){
+			background: yellow;
+			transform:  rotateX(180deg) translateZ(100px);
+		}
+		ul li:nth-child(3){
+			background: pink;
+			transform:  rotateX(270deg) translateZ(100px);
+		}
+		ul li:nth-child(4){
+			background: skyblue;
+			transform:  rotateX(360deg) translateZ(100px);
+		}
+		ul li:nth-child(5){
+			height: 200px;
+			width: 200px;
+			background: gold;
+			transform: rotateY(90deg) translateZ(100px) ;
+		}
+		ul li:nth-child(6){
+			height: 200px;
+			width: 200px;
+			background: green;
+			transform:rotateY(90deg) translateZ(-100px);
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>

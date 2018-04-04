@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position-exercise</title>
+	<style type="text/css">
+		header{
+			height: 50px;
+			width: 800px;
+			background: grey;
+			margin:0px auto;		
+		}
+		header ul{
+			width: 800px;
+			margin:0px;
+			padding: 0px;
+		}
+		header ul li{
+			width: 160px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			list-style: none;
+			float: left;
+		}
+		header ul li:nth-child(3){
+			background: red;
+			position: relative;
+		}
+		header ul li:nth-child(3) img{
+			position: absolute;
+			top: -10px;
+			left: 50px;
+		}
+		.leftbox{
+			height: 200px;
+			width: 100px;
+			background: red;
+			position: fixed;
+			top: 300px;
+			left: 0px;
+		}
+		.rightbox{
+			height: 200px;
+			width: 100px;
+			background: red;
+			position: fixed;
+			top: 300px;
+			right: 0px;
+		}
+		section{
+			background-image: url(image/杨幂图片.png);
+			background-repeat: no-repeat;
+			height: 297px;
+			width: 560px;
+			position: fixed;
+			top: 200px;
+			left: 500px;
+		}
+		section .lb1{
+			background-color: rgba(128 ,128 ,128 ,0.5);
+			width: 40px;
+			height: 40px;
+			color: white;
+			font-size: 40px;
+			line-height: 40px;
+			position: absolute;
+			top: 150px;
+		}
+		section .lb2{
+			background-color: rgba(128 ,128 ,128 ,0.5);
+			width: 40px;
+			height: 40px;
+			color: white;
+			font-size: 40px;
+			line-height: 40px;
+			position: absolute;
+			top: 150px;
+			left: 520px;
+		}
+		section .b11{
+			height: 20px;
+			width: 20px;
+			background-color: rgba(128,128,128,0.5);
+			border-radius: 10px;
+			line-height: 20px;
+			position: absolute;
+			bottom: 0px;
+			right: 80px;
+		}section .b12{
+			height: 20px;
+			width: 20px;
+			background-color: rgba(128,128,128,0.5);
+			border-radius: 10px;
+			line-height: 20px;
+			position: absolute;
+			bottom: 0px;
+			right: 60px;
+		}section .b13{
+			height: 20px;
+			width: 20px;
+			background-color: rgba(128,128,128,0.5);
+			border-radius: 10px;
+			line-height: 20px;
+			position: absolute;
+			bottom: 0px;
+			right: 40px;
+		}section .b14{
+			height: 20px;
+			width: 20px;
+			background-color: rgba(128,128,128,0.5);
+			border-radius: 10px;
+			line-height: 20px;
+			position: absolute;
+			bottom: 0px;
+			right: 20px;
+		}section .b15{
+			height: 20px;
+			width: 20px;
+			background-color: rgba(128,128,128,0.5);
+			border-radius: 10px;
+			line-height: 20px;
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
+		footer{
+			height: 1000px;
+			width: 900px;
+			position: relative;
+			top: 600px;
+			left: 350px;
+			background: blue;
+		}
+		span{
+			height: 100px;
+			width: 100px;
+			position: fixed;
+			right: 0px;
+			bottom: 0px;
+			background: grey;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+				<li><a href="#">天猫会员</a></li>
+				<li><a href="#">品牌街</a></li>
+				<li><a href="#">电器城<img src="image/天猫背景.png"></a></li>
+				<li><a href="#">营业厅</a></li>
+				<li><a href="#">魅力惠</a></li>
+		</ul>
+	</header>
+	<div class="leftbox">
+		
+	</div>
+	<div class="rightbox">
+		
+	</div>
+	<section>
+		<div class="lb1"><</div>
+		<div class="lb2">></div>
+		<div class="b11">1</div>
+		<div class="b12">2</div>
+		<div class="b13">3</div>
+		<div class="b14">4</div>
+		<div class="b15">5</div>
+	</section>
+	<footer>
+		
+	</footer>
+	<span>返回顶部</span>
+</body>
+</html>

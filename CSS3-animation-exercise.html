@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation-exercise</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+		div{
+			height: 400px;
+			width: 800px;
+			border: 1px solid black;
+			margin:50px auto;
+			overflow: hidden;
+		}
+		ul{
+			height: 400px;
+			width: 3200px;
+			animation:sport 8s linear infinite normal;
+		}
+		
+		@keyframes sport{
+			from{
+				margin-left: 0px;
+			}
+			to{
+				margin-left: -2400px;
+			}
+		}
+		ul:hover li{
+			opacity: 0.5;
+		}
+		ul:hover{
+			animation-play-state: paused;
+		}
+		ul li:hover{
+			opacity: 1;
+		}
+		ul li{
+			height: 400px;
+			width: 800px;
+			list-style: none;
+			float: left;
+
+		}
+		ul li img{
+			width: 800px;
+			height: 400px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li><img src="image/5.jpg"></li>
+			<li><img src="image/bj1.jpg"></li>
+			<li><img src="image/a/a1/1.jpg"></li>
+			<li><img src="image/5.jpg"></li>
+		</ul>
+	</div>
+</body>
+</html>

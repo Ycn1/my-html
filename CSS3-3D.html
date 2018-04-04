@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			height: 200px;
+			width: 200px;
+			margin:50px auto;
+			border: 1px solid black;
+			transform-style: preserve-3d;
+			position: relative;
+			transform:rotateX(0deg) rotateY(45deg);
+		}
+		ul li {
+			list-style: none;
+			height: 200px;
+			width: 200px;
+			text-align: center;
+			line-height: 200px;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		ul li:nth-child(1){
+			background: red;
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		ul li:nth-child(2){
+			background: yellow;
+			transform:  rotateX(180deg) translateZ(100px);
+		}
+		ul li:nth-child(3){
+			background: pink;
+			transform:  rotateX(270deg) translateZ(100px);
+		}
+		ul li:nth-child(4){
+			background: skyblue;
+			transform:  rotateX(360deg) translateZ(100px);
+		}
+		ul li:nth-child(5){
+			background: gold;
+			transform: rotateY(90deg) translateZ(100px) ;
+		}
+		ul li:nth-child(6){
+			background: green;
+			transform:rotateY(90deg) translateZ(-100px);
+		}
+
+	</style>
+</head>
+<body>
+	<ul>
+		<li>我</li>
+		<li>爱</li>
+		<li>祖</li>
+		<li>国</li>
+		<li>的</li>
+		<li>水</li>
+	</ul>
+</body>
+</html>

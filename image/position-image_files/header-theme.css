@@ -1,0 +1,57 @@
+/**
+ * @file 列表页主题
+ * @author: yangyang55@baidu.com
+ * @date: 16/7/29
+ */
+ /*背景
+background-color: #574ab8;
+background-hover: #756bc4;
+background-border: #c1bce0;
+*/
+.module-header .module-header-wrapper {
+    background: #574ab8;
+}
+/*顶部文字颜色*/
+.module-header-wrapper .xtJbHcb .CDaavKb a {
+    color: #fff;
+}
+.module-header-wrapper .xtJbHcb .gOIbzPb,
+.module-header-wrapper .xtJbHcb .CDaavKb {
+    color: #fff;
+}
+.module-header-wrapper .xtJbHcb .vyQHNyb .cMEMEF a {
+    color: #fff;
+}
+.module-header-wrapper .xtJbHcb .vyQHNyb .wGMtMgb a {
+    color: #fff;
+}
+.module-header-wrapper .xtJbHcb .vyQHNyb .wGMtMgb .gICyHO {
+    background: #fff;
+}
+.module-header-wrapper .xtJbHcb .CDaavKb .KQcHyA {
+    color: #d07d12;
+}
+.module-header-wrapper .xtJbHcb .gOIbzPb .BHgeMdb {
+    color: #f8645c;
+    font-style: normal;
+}
+.module-header-wrapper .xtJbHcb .CDaavKb .KQcHyA:hover {
+    background: #e35a53;
+}
+.module-header-wrapper .xtJbHcb .Ebdyswb {
+    border-left: 1px solid #fff;
+}
+.module-header-wrapper .xtJbHcb .PvsOgyb .QgxQAN a {
+    color: #424e67;
+}
+/*头部卡片*/
+.module-header-wrapper .xtJbHcb .OMDFeH {
+    color: #fff;
+}
+.module-header-wrapper .xtJbHcb .PvsOgyb .eQyIbEb {
+    color: #d07d12;
+}
+.module-header-wrapper .xtJbHcb .gOIbzPb .BHgeMdb {
+    color: #ffd821;
+    font-style: normal;
+}

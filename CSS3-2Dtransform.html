@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2d</title>
+	<style type="text/css">
+		ul{
+			height: 600px;
+			width: 600px;
+			border:1px solid black;
+		}
+		ul li{
+			height: 100px;
+			width: 100px;
+			margin-top: 20px;
+			list-style: none;
+			background: skyblue;
+			text-align: center;
+		}
+		ul li:nth-child(2){
+			transform: rotate(45deg);
+			transform-origin: (0,0);
+		}
+		ul li:nth-child(3){
+			transform:translate(100px,100px);
+
+		}
+
+		ul li:nth-child(4){
+			transform:scale(1.5);
+		}
+		ul li:nth-child(5){
+			transform: translate(100px;100px);scale(1.5);rotate(45deg);
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			margin:0 auto;
+			perspective: 500px;
+		}
+		div img{
+			height: 200px;
+			/*transform: rotateZ(30deg);*/
+			/*transform: rotateX(45deg);*/
+			transform: rotateY(45deg);
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>默认</li>
+		<li>旋转</li>
+		<li>平移</li>
+		<li>缩放</li>
+		<li>复合样式</li>
+	</ul>
+	<div>
+		<img src="image/5.jpg" alt="">
+	</div>
+</body>
+</html>

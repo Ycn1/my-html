@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animation</title>
+	<style type="text/css">
+		div .nav{
+			height: 200px;
+			width: 200px;
+			background: red;
+			animation-name: sport;
+			animation-duration: 3s;
+			animation-delay: 2s;
+			animation-timing-function: ease;
+			animation-iteration-count:infinite;
+			animation-direction: alternate;
+		}
+		@keyframes sport{
+			from{
+				width: 200px;
+			}
+			to{
+				width: 500px;
+			}
+		}
+		.d1{
+			height: 400px;
+			width: 400px;
+			border: 1px solid black;
+			margin:50px auto;
+			
+			position: relative;
+		}
+		.d2{
+			height: 100px;
+			width: 100px;
+			background: skyblue;
+			position: absolute;
+			animation :sport 2s;
+			animation-iteration-count:infinite;
+		}
+		@keyframes sport{
+			0%{
+				top: 0px;
+				left: 0px;
+			}
+			25%{
+				top: 0px;
+				left: 300px;
+			}
+			50%{
+				top: 300px;
+				left: 300px;
+			}
+			75%{
+				top: 300px;
+				left: 0px;
+			}
+			100%{
+				top: 0px;
+				left: 0px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav">
+		
+	</div>
+	<div class="d1">
+		<div class="d2"></div>
+		
+	</div>
+</body>
+</html>
