@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3-case</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+		}
+		body{
+			overflow: hidden;
+		}
+		.container{
+			background:tomato;
+			/*height: 50px;*/
+			height: 100%;
+			/*position:fixed;*/
+			
+		}
+		.bjs{
+			background: tomato;
+			z-index: 1;
+			height: 50px;
+			width: 100%;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+		.container input{
+			height: 50px;
+			opacity: 0;
+			z-index: 999;
+			cursor: pointer;
+			background: tomato;
+			position: fixed;
+			top: 0px;
+		}
+		.container a{
+			z-index: 2;
+			position: fixed;
+			top: 0px;
+			background: tomato;
+		}
+		.container input,.container a{
+			text-align: center;
+			line-height: 50px;
+			text-decoration: none;
+			position: fixed;
+			width: 100px;
+			
+		}
+		
+		#i1,#i1+a{
+			position: fixed;
+			left: 10%;
+		}
+		#i2,#i2+a{
+			position: fixed;
+			left: 30%;
+		}
+		#i3,#i3+a{
+			position: fixed;
+			left: 50%;
+		}
+		#i4,#i4+a{
+			position: fixed;
+			left: 70%;
+		}
+		#i5,#i5+a{
+			position: fixed;
+			left: 90%;
+		}
+		.container input:checked + a{
+			background:yellow;
+		}
+		.container input:hover + a{
+			background: red;
+		}
+		.container input:checked:hover + a{
+			background: yellow;
+		}
+		.content{
+			height:100%;
+			margin-top:50px;
+		}
+		.panel{
+		/*	background-size: 100% 100%;*/
+			height: 100%;
+			width: 100%;
+			/*background-repeat: no-repeat;*/
+		}
+		#home{
+			background-image: url(image/城市夜景.jpg);
+		}
+		#service{
+			background-image: url(image/5.jpg);
+		}
+		#about{
+			background-image: url(image/bj1.jpg);
+		}
+		#team{
+			background-image: url(image/a/a1/1.jpg);
+		}
+		#contact{
+			background-image: url(image/b/2.jpg);
+		}
+
+		}
+		.container #i1:checked ~.content {
+			transform: translateY(0%);
+		}
+		.container #i2:checked ~.content {
+			transform: translateY(-100%);
+		}
+		.container #i3:checked ~.content{
+			transform: translateY(-200%);
+		}
+		.container #i4:checked ~.content{
+			transform: translateY(-300%);
+		}
+		.container #i5:checked ~.content{
+			transform: translateY(-400%);
+		}
+
+		
+		 #i1:checked ~.content #home,
+		 #i2:checked ~.content #service,
+		 #i3:checked ~.content #about,
+		 #i4:checked ~.content #team,
+		 #i5:checked ~.content #contect
+		{
+			animation:sport 0.5s linear 0s normal;
+			
+		}
+		@keyframes sport{
+			from{
+				opacity: 0;
+			}
+			to{
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+		<div class="container">
+			<div class="bjs"></div>
+			<input type="radio" name="rd1" id="i1" checked="checked">
+			<a href="#">Home</a>
+			<input type="radio" name="rd1" id="i2">
+			<a href="#">Service</a>
+			<input type="radio" name="rd1" id="i3">
+			<a href="#">About</a>
+			<input type="radio" name="rd1" id="i4">
+			<a href="#">Team</a>
+			<input type="radio" name="rd1" id="i5">
+			<a href="#">Contect</a>
+			<div class="content">
+				<section class="panel" id="home">home</section>
+				<section class="panel" id="service">service</section>
+				<section class="panel" id="about"about></section>
+				<section class="panel" id="team">team</section>
+				<section class="panel" id="contact">contect</section>
+			</div>
+		</div>
+
+	
+</body>
+</html>
